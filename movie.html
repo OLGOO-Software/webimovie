@@ -1,0 +1,181 @@
+<html>
+ <head>
+  <title>
+   Moviewebi - Spiderman: Into the Spider-Verse
+  </title>
+  <link href="/styles/movie.css" rel="stylesheet"/>
+ </head>
+ <body dir="rtl" >
+  <div class="header">
+   <div class="logo">
+    <img src="svgs/logo.png" alt="logo" width=50px height=50px>
+   </div>
+   <div class="nav">
+    <a href="#">
+     سریال
+    </a>
+    <a href="#">
+     سینمایی
+    </a>
+    <a href="#">
+     انیمیشن
+    </a>
+    <a href="#">
+     درباره ما
+    </a>
+   </div>
+   <button id="theme-toggle" class="theme-toggle">تغییر حالت</button>
+   <a class="login" href="login.html">
+    حساب کاربری
+   </a>
+  </div>
+  <div class="search-bar">
+   <input placeholder="دنبال چی میگردی" type="text"/>
+   <button>
+    <i class="fas fa-search">
+      <img src="svgs/search.svg" alt="">
+    </i>
+   </button>
+  </div>
+  <div class="content">
+   <div class="movie-details">
+    <div class="movie-details-header">
+     <img alt="Spiderman: Into the Spider-Verse movie poster" src="https://rukminim2.flixcart.com/image/850/1000/kzzw5u80/poster/g/0/o/medium-spiderman-2-official-movie-on-good-quality-hd-quality-original-imagbvny3gsbwdfg.jpeg?q=20&crop=false"/>
+     <div class="details">
+      <h1>
+       spiderman
+      </h1>
+      <h2>
+       into the spider-verse
+      </h2>
+      <div class="info">
+       <span>
+        2018
+       </span>
+       <span>
+        کارگردان :
+        <a href="#">
+         Bob Persichetti
+        </a>
+       </span>
+       <span>
+        نوسندگان :
+        <a href="#">
+         Phil Lord
+        </a>
+       </span>
+       <span>
+        ستارگان :
+        <a href="#">
+         Shameik Moore
+        </a>
+        <a href="#">
+         Jake Johnson
+        </a>
+       </span>
+      </div>
+      <div class="rating">
+       <i class="svg_icon">
+        <img src="svgs/time.svg" alt="time">
+       </i>
+       <span>
+        1h 57m
+       </span>
+       <i class="svg_icon">
+        <img src="svgs/star.svg" alt="">
+       </i>
+       <span>
+        8.4/10
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="storyline">
+     <h3>
+      خلاصه داستان
+     </h3>
+     <p>
+      در شهری بزرگ و پرجنب‌وجوش، پسر جوانی به نام پیتر پارکر زندگی می‌کند که زندگی آرامی دارد و با مشکلات معمولی یک نوجوان دست و پنجه نرم می‌کند. اما سرنوشت او وقتی تغییر می‌کند که در یک آزمایشگاه علمی توسط یک عنکبوت جهش‌یافته گزیده می‌شود. از آن لحظه، قدرت‌ها و توانایی‌های شگفت‌انگیزی در او بیدار می‌شود: توانایی پرش و حرکت روی دیوارها، حس ششم نسبت به خطر، و قدرت بدنی بالا.
+     </p>
+    </div>
+    <div class="genres">
+     <h3>
+      ژانرها :
+     </h3>
+     <a href="#">
+      انیمیشن
+     </a>
+     <a href="#">
+      کمدی
+     </a>
+     <a href="#">
+      فانتزی
+     </a>
+     <a href="#">
+      اکشن
+     </a>
+    </div>
+    <div class="watchlist">
+     اضافه کردن به لیست
+    </div>
+    <a class="trailer" href="#">
+     پیش نمایش فیلم
+    </a>
+   </div>
+  </div>
+  <div class="reviews">
+    <h3>نظرات کاربران</h3>
+
+    <!-- نظرات کاربران -->
+    <div class="review">
+        <p>فیلم مرد عنکبوتی عالی بود! پیشنهاد می‌کنم حتماً ببینید!</p>
+    </div>
+
+    <!-- فرم نظرات -->
+    <div class="review-form">
+        <input type="text" id="name" placeholder="نام خود را وارد کنید">
+        <input type="email" id="email" placeholder="ایمیل خود را وارد کنید">
+        <textarea id="comment" placeholder="نظر خودتو بنویس"></textarea>
+        <button onclick="submitReview()">ثبت نظر</button>
+        <p id="review-error" class="error-message"></p>
+    </div>
+
+    <!-- فرم امتیازدهی -->
+    <div class="rating-form">
+        <h4>امتیاز شما به این فیلم (۱ تا ۱۰):</h4>
+        <input type="number" id="rating" placeholder="امتیاز" min="1" max="10">
+        <button onclick="submitRating()">ثبت امتیاز</button>
+        <p id="rating-error" class="error-message"></p>
+    </div>
+</div>
+  <div class="footer">
+   <div class="logo">
+    <img src="svgs/logo.png" alt="logo" width=100px height=100px>
+   </div>
+   <div class="info">
+    <p dir="rtl">
+      در این سایت بهترین پیشنهادهای فیلم برای همه سلیقه‌ها را فراهم کرده‌ایم. با کمک پیشنهادها و دسته‌بندی‌های متنوع ما، می‌توانید فیلم‌هایی که دوست دارید را راحت‌تر پیدا کنید و از تماشای آن‌ها لذت ببرید
+    </p>
+   </div>
+   <div class="social">
+    <a href="#">
+     مارا درشبکه های اجتماعی دنبال کنید
+    </a>
+   </div>
+   <div class="links">
+    <a href="#">
+     تماس با ما
+    </a>
+    <a href="#">
+     مقررات حریم خصوصی
+    </a>
+   </div>
+  </div>
+  <div class="footer-bottom">
+   <p>
+    حقوق مادی و معنوی این سایت محفوض است
+   </p>
+  </div>
+  <script src="/scripts/mov_script.js"></script>
+ </body>
+</html>

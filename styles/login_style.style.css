@@ -1,0 +1,235 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("fonts/Vazir.woff2") format("woff2"),
+      url("fonts/Vazir.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+body {
+    font-family: "Vazir", sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    background-color: #4A4A4A;
+    color: white;
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar .logo {
+    align-self: center;
+}
+.sidebar .title {
+    font-family: "Vazir", sans-serif;
+    align-self: center;
+    font-size: 34;
+    font-weight: bold;
+    color: yellow;
+}
+
+.sidebar p {
+    font-family: "Vazir", sans-serif;
+    text-align: center;
+    margin: 20px 0;
+}
+.sidebar .signup {
+    margin-top:20px ;
+    margin-left:110px ;
+    margin-right:110px ;
+    font-family: "Vazir", sans-serif;
+    background-color: #2f6dff;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.sidebar .signup:hover {
+    font-family: "Vazir", sans-serif;
+    background-color: #4784ff;
+}
+.sidebar .footer {
+    font-size: 12px;
+}
+.main-content {
+    font-family: "Vazir", sans-serif;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form {
+    font-family: "Vazir", sans-serif;
+    width: 300px;
+}
+.login-form h2 {
+    font-family: "Vazir", sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-form a {
+    font-family: "Vazir", sans-serif;
+    color: #4756ff;
+    text-decoration: none;
+    font-size: 12px;
+}
+.login-form a:hover {
+    font-family: "Vazir", sans-serif;
+    text-decoration: underline;
+}
+
+.login-form button {
+    font-family: "Vazir", sans-serif;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ecd100;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-form button:hover {
+    font-family: "Vazir", sans-serif;
+    background-color: #df6c00;
+}
+
+
+
+
+
+body.dark-mode {
+    font-family: "Vazir", sans-serif;
+    margin: 0;
+    background-color: #2d2c2c;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+body.dark-mode  .sidebar {
+    background-color: #454545;
+    color: white;
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+body.dark-mode  .sidebar .logo {
+    align-self: center;
+}
+body.dark-mode  .sidebar .title {
+    font-family: "Vazir", sans-serif;
+    align-self: center;
+    font-size: 34;
+    font-weight: bold;
+    color: yellow;
+}
+
+body.dark-mode  .sidebar p {
+    font-family: "Vazir", sans-serif;
+    text-align: center;
+    margin: 20px 0;
+}
+body.dark-mode  .sidebar .signup {
+    margin-top:20px ;
+    margin-left:110px ;
+    margin-right:110px ;
+    font-family: "Vazir", sans-serif;
+    background-color: #223e80;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+body.dark-mode  .sidebar .signup:hover {
+    font-family: "Vazir", sans-serif;
+    background-color: #4784ff;
+}
+body.dark-mode  .sidebar .footer {
+    font-size: 12px;
+}
+body.dark-mode  .main-content {
+    color: white;
+    font-family: "Vazir", sans-serif;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body.dark-mode  .login-form {
+    font-family: "Vazir", sans-serif;
+    width: 300px;
+}
+body.dark-mode  .login-form h2 {
+    font-family: "Vazir", sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+body.dark-mode  .login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+body.dark-mode  .login-form input[type="text"]{
+    background-color: #454545;
+}
+body.dark-mode  .login-form input[type="password"] {
+    background-color: #454545;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+body.dark-mode  .login-form a {
+    font-family: "Vazir", sans-serif;
+    color: #4756ff;
+    text-decoration: none;
+    font-size: 12px;
+}
+body.dark-mode  .login-form a:hover {
+    font-family: "Vazir", sans-serif;
+    text-decoration: underline;
+}
+
+body.dark-mode .login-form button {
+    font-family: "Vazir", sans-serif;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ecd100;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+body.dark-mode  .login-form button:hover {
+    font-family: "Vazir", sans-serif;
+    background-color: #df6c00;
+}

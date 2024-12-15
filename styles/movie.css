@@ -1,0 +1,600 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("fonts/Vazir.woff2") format("woff2"),
+    url("fonts/Vazir.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Vazir", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  position: relative;
+  top: 0; /* هدر در بالای صفحه قرار می‌گیرد */
+  left: 0; /* هدر از سمت چپ صفحه چسبیده می‌شود */
+  width: 100%; /* عرض هدر به اندازه عرض صفحه خواهد بود */
+  z-index: 1000; /* اطمینان از اینکه هدر در بالای سایر عناصر قرار گیرد */
+  justify-content: flex-start;
+  align-items: center;
+}
+.header .logo {
+  margin-right: 30px;
+  width: 50px;
+  height: 50px;
+}
+.header .nav {
+  display: flex;
+  margin-right: 20px;
+  gap: 20px;
+}
+.header .nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.header .nav a:hover {
+  color: rgb(240, 182, 21);
+  text-decoration: none;
+  font-size: 16px;
+}
+.header .login {
+  display: flex;
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  
+  margin-left: 30px; /* فاصله ۲۰ پیکسل از سمت راست */
+}
+.header .theme-toggle {
+  display: flex;
+  
+  background-color: #757575;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: auto; /* این ویژگی باعث می‌شود دکمه به سمت راست منتقل شود */
+  margin-left: 10px; /* فاصله ۲۰ پیکسل از سمت راست */
+}
+.search-bar {
+  margin-top: 100px;
+  display: flex;
+  font-family: "Vazir", sans-serif;
+  justify-content: center;
+  padding: 20px;
+}
+.search-bar input {
+  width: 50%;
+  font-family: "Vazir", sans-serif;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Vazir", sans-serif;
+  border: none;
+  background-color: #ffcc00;
+  border-radius: 5px 0px 0px 5px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex: 1;
+}
+.movie-details {
+  max-width: 800px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+.movie-details img {
+  width: 100%;
+  border-radius: 10px;
+}
+.movie-details h1 {
+  font-size: 32px;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+.movie-details h2 {
+  font-size: 24px;
+  color: #888;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+.info {
+  margin: 10px 0;
+}
+.info span {
+  display: block;
+  margin: 5px 0;
+}
+.info span a {
+  color: #007bff;
+  text-decoration: none;
+}
+.storyline {
+  margin: 20px 0;
+}
+.genres {
+  margin: 20px 0;
+}
+.genres a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.watchlist {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.rating .svg_icon img {
+  width: 24px;
+  height: 24px;
+}
+.trailer {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  margin: 20px 0;
+}
+.reviews {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  font-family: "Vazir", sans-serif;
+}
+
+.reviews h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.review {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.review-form,
+.rating-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.review-form input,
+.review-form textarea,
+.rating-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .logo {
+  width: 100px;
+  font-weight: bold;
+  height: 200px;
+  margin-right: 30px;
+}
+.footer .info {
+  max-width: 300px;
+}
+.footer .social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .social a {
+  color: white;
+  text-decoration: none;
+  background-color: #444;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .links a {
+  color: white;
+  text-decoration: none;
+}
+.footer-bottom {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.movie-details-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.movie-details-header img {
+  width: 100px;
+  height: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+.movie-details-header .details {
+  flex: 1;
+}
+.movie-details-header .details .rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.movie-details-header .details .rating i {
+  color: #ffcc00;
+}
+
+body.dark-mode {
+  font-family: "Vazir", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #454545;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body.dark-mode .header {
+    background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  position: relative;
+  top: 0; /* هدر در بالای صفحه قرار می‌گیرد */
+  left: 0; /* هدر از سمت چپ صفحه چسبیده می‌شود */
+  width: 100%; /* عرض هدر به اندازه عرض صفحه خواهد بود */
+  z-index: 1000; /* اطمینان از اینکه هدر در بالای سایر عناصر قرار گیرد */
+  justify-content: flex-start;
+  align-items: center;
+}
+body.dark-mode .header .logo {
+  margin-right: 30px;
+  width: 50px;
+  height: 50px;
+}
+body.dark-mode .header .nav {
+  display: flex;
+  margin-right: 20px;
+  gap: 20px;
+}
+body.dark-mode .header .nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+body.dark-mode .header .nav a:hover {
+  color: rgb(240, 182, 21);
+  text-decoration: none;
+  font-size: 16px;
+}
+body.dark-mode .header .login {
+  display: flex;
+  background-color: #ffcc00;
+  color: black;
+   
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 0; /* این ویژگی باعث می‌شود دکمه به سمت راست منتقل شود */
+  margin-left: 30px; /* فاصله ۲۰ پیکسل از سمت راست */
+}
+
+body.dark-mode .header .theme-toggle {
+  display: flex;
+  background-color: #707070;
+  color: black;
+  
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: auto; /* این ویژگی باعث می‌شود دکمه به سمت راست منتقل شود */
+
+}
+body.dark-mode .search-bar {
+  margin-top: 100px;
+  display: flex;
+
+  font-family: "Vazir", sans-serif;
+  justify-content: center;
+  padding: 20px;
+}
+body.dark-mode .search-bar input {
+  width: 50%;
+  color: #f8f8f8;
+  background-color: #5d5d5d;
+  font-family: "Vazir", sans-serif;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #2c2c2c;
+  border-radius: 5px 0 0 5px;
+}
+body.dark-mode .search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Vazir", sans-serif;
+  border: none;
+  background-color: #ffcc00;
+  border-radius: 5px 0px 0px 5px;
+  cursor: pointer;
+}
+
+body.dark-mode .content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex: 1;
+}
+body.dark-mode .movie-details {
+  max-width: 800px;
+  background-color: rgb(31, 31, 31);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+body.dark-mode .movie-details img {
+  width: 100%;
+  border-radius: 10px;
+}
+body.dark-mode .movie-details h1 {
+  font-size: 32px;
+  color: black;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+body.dark-mode .movie-details h2 {
+  font-size: 24px;
+  color: #f3f3f3;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+body.dark-mode .info {
+  margin: 10px 0;
+}
+body.dark-mode .info span {
+  display: block;
+  color: white;
+  margin: 5px 0;
+}
+body.dark-mode .info span a {
+  color: #007bff;
+  text-decoration: none;
+}
+body.dark-mode .storyline {
+  color: white;
+  margin: 20px 0;
+}
+body.dark-mode .genres {
+  color: white;
+  margin: 20px 0;
+}
+body.dark-mode .genres a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+body.dark-mode .watchlist {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px 0;
+}
+body.dark-mode .rating .svg_icon img {
+  width: 24px;
+  height: 24px;
+}
+body.dark-mode .trailer {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  margin: 20px 0;
+}
+body.dark-mode .reviews {
+  max-width: 800px;
+  border-radius: 10px;
+  background-color: rgb(31, 31, 31);
+  margin: 20px auto;
+  padding: 10px;
+  font-family: "Vazir", sans-serif;
+}
+
+body.dark-mode .reviews h3 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+body.dark-mode .review {
+  color: #f3f3f3;
+  background-color: rgb(87, 87, 87);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+body.dark-mode .review-form {
+  background-color: rgb(95, 95, 95);
+}
+body.dark-mode .rating-form {
+  background-color: #717171;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+body.dark-mode .review-form input {
+  background-color: #5e5e5e;
+  color: #ffffff;
+}
+body.dark-mode .review-form textarea {
+  background-color: #5e5e5e;
+  color: #ffffff;
+}
+body.dark-mode .rating-form input {
+  background-color: #888;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #5f5f5f;
+  border-radius: 5px;
+}
+
+body.dark-mode button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body.dark-mode .error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+body.dark-mode .footer {
+    background-color: #333;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body.dark-mode .footer .logo {
+  width: 100px;
+  font-weight: bold;
+  height: 200px;
+  margin-right: 30px;
+}
+body.dark-mode .footer .info {
+  max-width: 300px;
+}
+body.dark-mode .footer .social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body.dark-mode.footer .social a {
+  color: white;
+  text-decoration: none;
+  background-color: #444;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+body.dark-mode .footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body.dark-mode .footer .links a {
+  color: white;
+  text-decoration: none;
+}
+body.dark-mode .footer-bottom {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+body.dark-mode .movie-details-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+body.dark-mode .movie-details-header img {
+  width: 100px;
+  height: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+body.dark-mode .movie-details-header .details {
+  flex: 1;
+}
+body.dark-mode .movie-details-header .details .rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+body.dark-mode.movie-details-header .details .rating i {
+  color: #ffcc00;
+}

@@ -1,0 +1,435 @@
+<html>
+  <head>
+    <title>Moviewebi</title>
+    <link href="/styles/homepage.style.css" rel="stylesheet" />
+  </head>
+  <body dir="rtl">
+    <div class="header">
+      <div class="logo">
+        <img src="svgs/logo.png" alt="logo" width="50px" height="50px" />
+      </div>
+      <div class="nav">
+        <a href="#"> سریال </a>
+        <a href="#"> سینمایی </a>
+        <a href="#"> انیمیشن </a>
+        <a href="#"> درباره ما </a>
+      </div>
+      <button id="theme-toggle" class="theme-toggle">تغییر حالت</button>
+      <a class="login" href="/login.html"> حساب کاربری </a>
+     
+    </div>
+    <div class="search-bar">
+      <input placeholder="دنبال چی میگردی" type="text" />
+      <button>
+        <i class="fas fa-search">
+          <img src="svgs/search.svg" alt="" />
+        </i>
+      </button>
+    </div>
+    <div class="flex-divs">
+      <div class="content-div">
+        <div class="slideshow-container">
+          <div class="slide fade" style="background-image: url('/imgs/55.jpg');"></div>
+          <div class="slide fade" style="background-image: url('/imgs/33.webp');"></div>
+          <div class="slide fade" style="background-image: url('/imgs/99.jpg');"></div>
+      </div>
+      <div class="dots-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+        <div class="section">
+          <div class="section-title">بهترین های سال ۲۰۲۴</div>
+          <div class="movies">
+            <div class="movie">
+              <a href="movie.html">
+                <img
+                alt="joker"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/xjgZsAhmF7I3DFNu6um5Rpjtokbl5TDwzpmoWpfvh7zfSPxTA.jpg"
+                width="150"
+              /></a>
+              <div>joker</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="amazings 4"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/ChzCYlPtgpamLV7ZvqSCgdCdCrRq16od5OhiPAicsG6u0T8E.jpg"
+                width="150"
+              />
+              <div>amazings 4</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="fury"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/mu6VfXcZnnycPyWqyvYpOABW9GRS1doS5GymbFlIb8zbpn4JA.jpg"
+                width="150"
+              />
+              <div>fury</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="sherek 5"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/w1xgNiOXZN7AOhPyVQea5cMcUDtVouGEcJR9a4fW97I8SPxTA.jpg"
+                width="150"
+              />
+              <div>sherek 5</div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-title">پیشنهادهای ویژه ی شما</div>
+          <div class="movies">
+            <div class="movie">
+              <img
+                alt="amazings 4"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/ChzCYlPtgpamLV7ZvqSCgdCdCrRq16od5OhiPAicsG6u0T8E.jpg"
+                width="150"
+              />
+              <div>amazings 4</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="amazings 4"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/ChzCYlPtgpamLV7ZvqSCgdCdCrRq16od5OhiPAicsG6u0T8E.jpg"
+                width="150"
+              />
+              <div>amazings 4</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="amazings 4"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/ChzCYlPtgpamLV7ZvqSCgdCdCrRq16od5OhiPAicsG6u0T8E.jpg"
+                width="150"
+              />
+              <div>amazings 4</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="amazings 4"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/ChzCYlPtgpamLV7ZvqSCgdCdCrRq16od5OhiPAicsG6u0T8E.jpg"
+                width="150"
+              />
+              <div>amazings 4</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="amazings 4"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/ChzCYlPtgpamLV7ZvqSCgdCdCrRq16od5OhiPAicsG6u0T8E.jpg"
+                width="150"
+              />
+              <div>amazings 4</div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-title blue">movies</div>
+          <div class="movies">
+            <div class="movie">
+              <img
+                alt="joker"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/xjgZsAhmF7I3DFNu6um5Rpjtokbl5TDwzpmoWpfvh7zfSPxTA.jpg"
+                width="150"
+              />
+              <div>joker</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="amazings 4"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/ChzCYlPtgpamLV7ZvqSCgdCdCrRq16od5OhiPAicsG6u0T8E.jpg"
+                width="150"
+              />
+              <div>amazings 4</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="fury"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/mu6VfXcZnnycPyWqyvYpOABW9GRS1doS5GymbFlIb8zbpn4JA.jpg"
+                width="150"
+              />
+              <div>fury</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="sherek 5"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/w1xgNiOXZN7AOhPyVQea5cMcUDtVouGEcJR9a4fW97I8SPxTA.jpg"
+                width="150"
+              />
+              <div>sherek 5</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="joker"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/xjgZsAhmF7I3DFNu6um5Rpjtokbl5TDwzpmoWpfvh7zfSPxTA.jpg"
+                width="150"
+              />
+              <div>joker</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="amazings 4"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/ChzCYlPtgpamLV7ZvqSCgdCdCrRq16od5OhiPAicsG6u0T8E.jpg"
+                width="150"
+              />
+              <div>amazings 4</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="fury"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/mu6VfXcZnnycPyWqyvYpOABW9GRS1doS5GymbFlIb8zbpn4JA.jpg"
+                width="150"
+              />
+              <div>fury</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="sherek 5"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/w1xgNiOXZN7AOhPyVQea5cMcUDtVouGEcJR9a4fW97I8SPxTA.jpg"
+                width="150"
+              />
+              <div>sherek 5</div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-title blue">series</div>
+          <div class="movies">
+            <div class="movie">
+              <img
+                alt="joker"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/xjgZsAhmF7I3DFNu6um5Rpjtokbl5TDwzpmoWpfvh7zfSPxTA.jpg"
+                width="150"
+              />
+              <div>joker</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="amazings 4"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/ChzCYlPtgpamLV7ZvqSCgdCdCrRq16od5OhiPAicsG6u0T8E.jpg"
+                width="150"
+              />
+              <div>amazings 4</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="fury"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/mu6VfXcZnnycPyWqyvYpOABW9GRS1doS5GymbFlIb8zbpn4JA.jpg"
+                width="150"
+              />
+              <div>fury</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="sherek 5"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/w1xgNiOXZN7AOhPyVQea5cMcUDtVouGEcJR9a4fW97I8SPxTA.jpg"
+                width="150"
+              />
+              <div>sherek 5</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="joker"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/xjgZsAhmF7I3DFNu6um5Rpjtokbl5TDwzpmoWpfvh7zfSPxTA.jpg"
+                width="150"
+              />
+              <div>joker</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="amazings 4"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/ChzCYlPtgpamLV7ZvqSCgdCdCrRq16od5OhiPAicsG6u0T8E.jpg"
+                width="150"
+              />
+              <div>amazings 4</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="fury"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/mu6VfXcZnnycPyWqyvYpOABW9GRS1doS5GymbFlIb8zbpn4JA.jpg"
+                width="150"
+              />
+              <div>fury</div>
+            </div>
+            <div class="movie">
+              <img
+                alt="sherek 5"
+                height="200"
+                src="https://storage.googleapis.com/a1aa/image/w1xgNiOXZN7AOhPyVQea5cMcUDtVouGEcJR9a4fW97I8SPxTA.jpg"
+                width="150"
+              />
+              <div>sherek 5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="category">ژانر ها</div>
+        <div class="category-item">
+          <img
+            class="category_img"
+            alt="scary"
+            height="50"
+            src="/imgs/0.jpeg"
+            width="50"
+          />
+          <a href="#"> ترسناک </a>
+        </div>
+        <div class="category-item">
+          <img
+          class="category_img"
+            alt="comedy"
+            height="50"
+            width="50"
+            src="imgs/00.jpg"
+          />
+          <a href="#"> خنده دار </a>
+        </div>
+        <div class="category-item">
+          <img
+          class="category_img"
+            alt="dram"
+            height="50"
+            src="imgs/1.jpeg"            width="50"
+          />
+          <a href="#"> درام </a>
+        </div>
+        <div class="category-item">
+          <img
+          class="category_img"
+            alt="action"
+            height="50"
+            src="imgs/11.png"
+            width="50"
+          />
+          <a href="#"> اکشن </a>
+        </div>
+        <div class="category-item">
+          <img
+          class="category_img"
+            alt="scary"
+            height="50"
+            src="imgs/2.jpeg"
+            width="50"
+          />
+          <a href="#"> فانتزی </a>
+        </div>
+        <div class="category-item">
+          <img
+            alt="comedy"
+            height="50"
+            class="category_img"
+            src="imgs/5.png"
+            width="50"
+          />
+          <a href="#"> مستند </a>
+        </div>
+        <div class="category-item">
+          <img
+          class="category_img"
+            alt="dram"
+            height="50"
+            src="imgs/3.jpeg"
+            width="50"
+          />
+          <a href="#"> عاشقانه </a>
+        </div>
+        <div class="category-item">
+          <img
+          class="category_img"
+            alt="action"
+            height="50"
+            src="imgs/0.png"
+            width="50"
+          />
+          <a href="#"> خانوادگی </a>
+        </div>
+        <div class="ad">
+          <img alt="Ad 1" height="300" src="https://storage.googleapis.com/a1aa/image/N7ylIJKtRXKcK1aZoTQfvm2dQGREhPZDEeJVuOfbIadP1eEPB.jpg" width="300" />
+          <img alt="Ad 2" height="300" src="https://storage.googleapis.com/a1aa/image/ejEjPBqfTSqyvUFP5Hgp8qfYPOhX2XtfoJUfkBnQI241U7JeE.jpg" width="300"/>
+          <img alt="Ad 3" height="300" src="https://storage.googleapis.com/a1aa/image/WkXFAHbpBVZBP5peSMqdfBnvHGSp8VNwh3v267EDehsK1eEPB.jpg" width="300"/>
+          <img alt="Ad 4" height="300" src="https://storage.googleapis.com/a1aa/image/gpu0BSfNnMUoIyuVy8jZGHBKTMETlUMrra22qGdwId9Utn4JA.jpg" width="300"/>
+         </div>
+         <div>
+         </div>
+      </div>
+      </div>
+
+      <div class="faq">
+        <h3>سوالات متداول</h3>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                امکانات وبسایت چیست؟
+            </button>
+            <div class="faq-answer">
+                وبسایت ما امکانات متنوعی از جمله دسترسی سریع به محصولات، مدیریت سفارش‌ها، و ارائه تخفیف‌های ویژه را در اختیار کاربران قرار می‌دهد.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                چگونه می‌توانم از امکانات وبسایت استفاده کنم؟
+            </button>
+            <div class="faq-answer">
+                برای استفاده از امکانات، کافیست در وبسایت ثبت‌نام کنید و وارد حساب کاربری خود شوید. سپس می‌توانید از منوی اصلی به بخش‌های مختلف دسترسی پیدا کنید.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                چرا وبسایت شما نسبت به سایر رقبا برتر است؟
+            </button>
+            <div class="faq-answer">
+                ما تلاش می‌کنیم بهترین تجربه کاربری را با پشتیبانی ۲۴ ساعته، امنیت بالا، و ارائه خدمات با کیفیت به کاربران ارائه دهیم.
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="footer">
+      <div class="logo">
+        <img src="svgs/logo.png" alt="logo" width="100px" height="100px" />
+      </div>
+      <div class="info">
+        <p dir="rtl">
+          در این سایت بهترین پیشنهادهای فیلم برای همه سلیقه‌ها را فراهم
+          کرده‌ایم. با کمک پیشنهادها و دسته‌بندی‌های متنوع ما، می‌توانید
+          فیلم‌هایی که دوست دارید را راحت‌تر پیدا کنید و از تماشای آن‌ها لذت
+          ببرید
+        </p>
+      </div>
+      <div class="social">
+        <a href="#"> مارا درشبکه های اجتماعی دنبال کنید </a>
+      </div>
+      <div class="links">
+        <a href="#"> تماس با ما </a>
+        <a href="#"> مقررات حریم خصوصی </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>حقوق مادی و معنوی این سایت محفوض است</p>
+    </div>
+    
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
